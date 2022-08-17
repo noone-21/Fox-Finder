@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".found"
+    android:background="@color/body">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/yellow">
+
+        <Button
+            android:id="@+id/btnLost"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:text="@string/btnlost"
+            android:background="@color/yellow"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white">></Button>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFound"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btnfound"
+            android:text="@string/btnfound"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/body"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/founditem"
+            android:textAllCaps="true"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/rclview"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    `
+
+
+
+
+</LinearLayout>
+

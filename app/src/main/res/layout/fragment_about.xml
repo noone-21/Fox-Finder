@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#37435b"
+    tools:context=".ui.about.AboutFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+        app:shapeAppearanceOverlay="@style/roundImageview"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:gravity="top|center"
+        android:text="About Us"
+        android:textAllCaps="true"
+        android:textColor="#fec234"
+        android:textSize="35sp"
+        android:textStyle="italic|bold" />
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_abdullah"
+        android:background="#333333"
+        android:layout_marginTop="180dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="4dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:gravity="center|top"
+            android:text="Abdullah\n BackEnd Java Developer"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abdullah"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="60dp"
+            android:text="BackEnd Java Developer"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_noureen"
+        android:layout_marginTop="180dp"
+        android:layout_width="200dp"
+        android:layout_marginLeft="210dp"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="4dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:gravity="center|top"
+            android:text="Noureen\nBackEnd Java Developer"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/noureen"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_danish"
+        android:layout_marginTop="400dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="4dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:gravity="center|top"
+            android:text="Danish\n Front End UI Developer"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/danish"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_durrez"
+        android:layout_marginTop="400dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="210dp"
+        card_view:cardCornerRadius="4dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:gravity="center|top"
+            android:text="Durrez\n Front End UI Developer"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/durez"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37435b"
+    tools:context=".newPost">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="100dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            app:shapeAppearanceOverlay="@style/roundImageview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:text="New Post"
+            android:textAllCaps="true"
+            android:textColor="#fec234"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_users"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="onClick"
+            android:src="@drawable/ic_baseline_insert_photo_24"
+            app:shapeAppearanceOverlay="@style/roundImageview"
+
+            />
+
+        <EditText
+            android:id="@+id/itemname"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/edittextgradient"
+            android:drawableLeft="@drawable/ic_baseline_arrow_circle_right_24"
+            android:hint="@string/hintitemname"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/itemdesc"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittextgradient"
+            android:drawableLeft="@drawable/ic_baseline_info_24"
+            android:hint="@string/hintitemdesc"
+            android:paddingLeft="10dp"
+            android:paddingBottom="100dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radiotype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="670dp"
+        android:layout_marginLeft="60dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/itemtype"
+
+            />
+        <RadioButton
+            android:id="@+id/radiolost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Lost"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:onClick="checkButton"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/radiofound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Found"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:onClick="checkButton"
+            />
+    </RadioGroup>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/edit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="670dp"
+        android:background="@drawable/btn_gradiant"
+        android:drawableTop="@drawable/ic_baseline_done_24"
+        android:paddingTop="23dp"
+        android:textColor="#333333"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+</RelativeLayout>
